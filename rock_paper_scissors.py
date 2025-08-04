@@ -18,7 +18,7 @@ while True:
     elif player_move == 's':
         player_move = scissors
     else:
-        raise SystemExit('Invalid Input. Try again...')
+        player_move = input('Invalid Input. Try again: ')
 
     computer_random_number = random.randint(1, 3)
     computer_move = ''
@@ -29,7 +29,6 @@ while True:
         computer_move = paper
     else:
         computer_move = scissors
-    time.sleep(0.6)
     print(f'The computer chose {computer_move}')
     result = ''
 
